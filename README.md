@@ -65,6 +65,13 @@ The target group uses HTTP health checks against `/` on port 5000.
 | Traffic Management | AWS Application Load Balancer |
 | Source | GitHub |
 
+## Documentation
+
+- [Project Theory](./docs/theory.md) — concepts, architecture, tool responsibilities, pipeline theory, and troubleshooting lessons.
+- [AWS Deployment](./docs/deployment.md) — runtime setup, ALB, target group, health checks, and deployment model.
+- [Architecture Diagram](./docs/architecture.svg)
+- [Jenkins Pipeline Diagram](./docs/pipeline.svg)
+
 ## Repository structure
 
 ```text
