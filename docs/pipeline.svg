@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390">
+  <style>
+    .box{fill:#ffffff;stroke:#202020;stroke-width:2}
+    .title{font:700 24px sans-serif;fill:#202020}
+    .label{font:600 16px sans-serif;fill:#202020}
+    .small{font:13px sans-serif;fill:#404040}
+    .line{stroke:#202020;stroke-width:3;fill:none}
+  </style>
+  <text x="600" y="36" text-anchor="middle" class="title">Validated Jenkins CI / DevSecOps Pipeline</text>
+
+  <rect x="30" y="80" width="170" height="80" rx="12" class="box"/>
+  <text x="115" y="113" text-anchor="middle" class="label">Checkout</text>
+  <text x="115" y="136" text-anchor="middle" class="small">GitHub source</text>
+
+  <rect x="235" y="80" width="170" height="80" rx="12" class="box"/>
+  <text x="320" y="113" text-anchor="middle" class="label">SonarQube</text>
+  <text x="320" y="136" text-anchor="middle" class="small">Quality Gate</text>
+
+  <rect x="440" y="80" width="170" height="80" rx="12" class="box"/>
+  <text x="525" y="113" text-anchor="middle" class="label">OWASP</text>
+  <text x="525" y="136" text-anchor="middle" class="small">Dependency Check</text>
+
+  <rect x="645" y="80" width="170" height="80" rx="12" class="box"/>
+  <text x="730" y="113" text-anchor="middle" class="label">Trivy FS</text>
+  <text x="730" y="136" text-anchor="middle" class="small">vulnerability scan</text>
+
+  <rect x="850" y="80" width="170" height="80" rx="12" class="box"/>
+  <text x="935" y="113" text-anchor="middle" class="label">Docker Build</text>
+  <text x="935" y="136" text-anchor="middle" class="small">build-number tag</text>
+
+  <rect x="337" y="240" width="170" height="80" rx="12" class="box"/>
+  <text x="422" y="273" text-anchor="middle" class="label">Trivy Image</text>
+  <text x="422" y="296" text-anchor="middle" class="small">container scan</text>
+
+  <rect x="542" y="240" width="170" height="80" rx="12" class="box"/>
+  <text x="627" y="273" text-anchor="middle" class="label">Docker Hub</text>
+  <text x="627" y="296" text-anchor="middle" class="small">push image</text>
+
+  <rect x="747" y="240" width="170" height="80" rx="12" class="box"/>
+  <text x="832" y="273" text-anchor="middle" class="label">AWS Deployment</text>
+  <text x="832" y="296" text-anchor="middle" class="small">next automation step</text>
+
+  <path d="M200 120 L235 120 M405 120 L440 120 M610 120 L645 120 M815 120 L850 120" class="line"/>
+  <path d="M935 160 L422 240" class="line"/>
+  <path d="M507 280 L542 280 M712 280 L747 280" class="line"/>
+</svg>
