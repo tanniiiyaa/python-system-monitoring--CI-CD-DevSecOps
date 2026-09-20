@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# SonarQube
+.scannerwork/
+
+# CI security reports
+dependency-check-report.xml
+trivy-fs-report.txt
+trivy-image-report.txt
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local secrets
+*.pem
+*.key
+.env
+.env.*
+!.env.example
