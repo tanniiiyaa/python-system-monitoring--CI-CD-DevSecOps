@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <style>
+    .box{fill:#ffffff;stroke:#202020;stroke-width:2}
+    .title{font:700 24px sans-serif;fill:#202020}
+    .label{font:600 18px sans-serif;fill:#202020}
+    .small{font:14px sans-serif;fill:#404040}
+    .line{stroke:#202020;stroke-width:3;fill:none}
+    .dash{stroke:#666;stroke-width:2;stroke-dasharray:8 8;fill:none}
+  </style>
+  <text x="600" y="42" text-anchor="middle" class="title">Python System Monitoring — AWS DevSecOps Architecture</text>
+
+  <rect x="450" y="75" width="300" height="70" rx="12" class="box"/>
+  <text x="600" y="118" text-anchor="middle" class="label">GitHub</text>
+  <text x="600" y="140" text-anchor="middle" class="small">Application source</text>
+
+  <rect x="90" y="220" width="260" height="100" rx="12" class="box"/>
+  <text x="220" y="258" text-anchor="middle" class="label">Jenkins Controller</text>
+  <text x="220" y="283" text-anchor="middle" class="small">Pipeline orchestration</text>
+  <text x="220" y="304" text-anchor="middle" class="small">Credentials / stages</text>
+
+  <rect x="470" y="220" width="260" height="100" rx="12" class="box"/>
+  <text x="600" y="258" text-anchor="middle" class="label">Jenkins Agent</text>
+  <text x="600" y="283" text-anchor="middle" class="small">Docker / Trivy</text>
+  <text x="600" y="304" text-anchor="middle" class="small">Build execution</text>
+
+  <rect x="850" y="190" width="250" height="70" rx="12" class="box"/>
+  <text x="975" y="222" text-anchor="middle" class="label">SonarQube</text>
+  <text x="975" y="244" text-anchor="middle" class="small">Static analysis + gate</text>
+
+  <rect x="850" y="285" width="250" height="70" rx="12" class="box"/>
+  <text x="975" y="317" text-anchor="middle" class="label">Docker Hub</text>
+  <text x="975" y="339" text-anchor="middle" class="small">Versioned image registry</text>
+
+  <rect x="450" y="405" width="300" height="75" rx="12" class="box"/>
+  <text x="600" y="438" text-anchor="middle" class="label">Application Load Balancer</text>
+  <text x="600" y="461" text-anchor="middle" class="small">HTTP :80</text>
+
+  <rect x="180" y="555" width="300" height="100" rx="12" class="box"/>
+  <text x="330" y="590" text-anchor="middle" class="label">App Server 1</text>
+  <text x="330" y="616" text-anchor="middle" class="small">Docker container :5000</text>
+  <text x="330" y="638" text-anchor="middle" class="small">Healthy ALB target</text>
+
+  <rect x="720" y="555" width="300" height="100" rx="12" class="box"/>
+  <text x="870" y="590" text-anchor="middle" class="label">App Server 2</text>
+  <text x="870" y="616" text-anchor="middle" class="small">Docker container :5000</text>
+  <text x="870" y="638" text-anchor="middle" class="small">Healthy ALB target</text>
+
+  <path d="M600 145 L600 215" class="line"/>
+  <path d="M350 270 L470 270" class="line"/>
+  <path d="M730 255 L850 225" class="line"/>
+  <path d="M730 285 L850 320" class="line"/>
+  <path d="M600 320 L600 400" class="line"/>
+  <path d="M520 480 L380 550" class="line"/>
+  <path d="M680 480 L820 550" class="line"/>
+  <path d="M220 320 C220 375 350 395 480 420" class="dash"/>
+
+  <text x="200" y="370" class="small">orchestration</text>
+  <text x="790" y="177" class="small">analysis</text>
+  <text x="790" y="372" class="small">push</text>
+  <text x="610" y="535" text-anchor="middle" class="small">health-checked targets</text>
+</svg>
